@@ -1,9 +1,11 @@
 # api documentation for  [url-loader (v0.5.8)](https://github.com/webpack/url-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-url-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-url-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-url-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-url-loader)
 #### url loader module for webpack
 
-[![NPM](https://nodei.co/npm/url-loader.png?downloads=true)](https://www.npmjs.com/package/url-loader)
+[![NPM](https://nodei.co/npm/url-loader.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/url-loader)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-url-loader/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-url-loader_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-url-loader/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-url-loader/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-url-loader/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-url-loader/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-url-loader/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-url-loader/build/screenCapture.npmPackageListing.svg)
 
@@ -38,28 +40,22 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "bebraw",
-            "email": "bebraw@gmail.com"
+            "name": "bebraw"
         },
         {
-            "name": "d3viant0ne",
-            "email": "wiens.joshua@gmail.com"
+            "name": "d3viant0ne"
         },
         {
-            "name": "ericclemmons",
-            "email": "eric@smarterspam.com"
+            "name": "ericclemmons"
         },
         {
-            "name": "jhnns",
-            "email": "mail@johannesewald.de"
+            "name": "jhnns"
         },
         {
-            "name": "sokra",
-            "email": "tobias.koppers@googlemail.com"
+            "name": "sokra"
         },
         {
-            "name": "thelarkinn",
-            "email": "sean.larkin@cuw.edu"
+            "name": "thelarkinn"
         }
     ],
     "name": "url-loader",
@@ -67,7 +63,6 @@
     "peerDependencies": {
         "file-loader": "*"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/webpack/url-loader.git"
@@ -76,17 +71,6 @@
     "version": "0.5.8"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module url-loader](#apidoc.module.url-loader)
-1.  boolean <span class="apidocSignatureSpan">url-loader.</span>raw
-
-
-
-# <a name="apidoc.module.url-loader"></a>[module url-loader](#apidoc.module.url-loader)
 
 
 
