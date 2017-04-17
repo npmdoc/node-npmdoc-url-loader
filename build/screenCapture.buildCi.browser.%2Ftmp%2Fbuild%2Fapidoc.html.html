@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/webpack/url-loader#readme"
-
-    >url-loader (v0.5.8)</a>
+    <a href="https://github.com/webpack/url-loader#readme">url-loader (v0.5.8)</a>
 </h1>
 <h4>url loader module for webpack</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.url-loader">module url-loader</a><ol>
 
@@ -116,17 +109,17 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">url-loader = function (content) {
-	this.cacheable &#x26;&#x26; this.cacheable();
+	this.cacheable &amp;&amp; this.cacheable();
 	var query = loaderUtils.getOptions(this) || {};
-	var limit = (this.options &#x26;&#x26; this.options.url &#x26;&#x26; this.options.url.dataUrlLimit) || 0;
+	var limit = (this.options &amp;&amp; this.options.url &amp;&amp; this.options.url.dataUrlLimit) || 0;
 	if(query.limit) {
 		limit = parseInt(query.limit, 10);
 	}
 	var mimetype = query.mimetype || query.minetype || mime.lookup(this.resourcePath);
-	if(limit &#x3c;= 0 || content.length &#x3c; limit) {
-		return &#x22;module.exports = &#x22; + JSON.stringify(&#x22;data:&#x22; + (mimetype ? mimetype + &#x22;;&#x22; : &#x22;&#x22;) + &#x22;base64,&#x22; + content.toString(&#x22;base64&#x22;));
+	if(limit &lt;= 0 || content.length &lt; limit) {
+		return "module.exports = " + JSON.stringify("data:" + (mimetype ? mimetype + ";" : "") + "base64," + content.toString("base64"));
 	} else {
-		var fileLoader = require(&#x22;file-loader&#x22;);
+		var fileLoader = require("file-loader");
 		return fileLoader.call(this, content);
 	}
 }</pre></li>
@@ -147,16 +140,16 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 	var query = loaderUtils.getOptions(this) || {};
-	var limit = (this.options &#x26;&#x26; this.options.url &#x26;&#x26; this.options.url.dataUrlLimit) || 0;
+	var limit = (this.options &amp;&amp; this.options.url &amp;&amp; this.options.url.dataUrlLimit) || 0;
 	if(query.limit) {
 		limit = parseInt(query.limit, 10);
 	}
 	var mimetype = query.mimetype || query.minetype || mime.lookup(this.resourcePath);
-	if(limit &#x3c;= 0 || content.length &#x3c; limit) {
-		return &#x22;module.exports = &#x22; + JSON.stringify(&#x22;data:&#x22; + (mimetype ? mimetype + &#x22;;&#x22; : &#x22;&#x22;) + &#
-x22;base64,&#x22; + content.<span class="apidocCodeKeywordSpan">toString</span>(&#x22;base64&#x22;));
+	if(limit &lt;= 0 || content.length &lt; limit) {
+		return "module.exports = " + JSON.stringify("data:" + (mimetype ? mimetype + ";" : "") + &amp;#
+x22;base64," + content.<span class="apidocCodeKeywordSpan">toString</span>("base64"));
 	} else {
-		var fileLoader = require(&#x22;file-loader&#x22;);
+		var fileLoader = require("file-loader");
 		return fileLoader.call(this, content);
 	}
 }
@@ -181,16 +174,16 @@ module.exports.raw = true;
     <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 	var query = loaderUtils.getOptions(this) || {};
-	var limit = (this.options &#x26;&#x26; this.options.url &#x26;&#x26; this.options.url.dataUrlLimit) || 0;
+	var limit = (this.options &amp;&amp; this.options.url &amp;&amp; this.options.url.dataUrlLimit) || 0;
 	if(query.limit) {
 		limit = parseInt(query.limit, 10);
 	}
 	var mimetype = query.mimetype || query.minetype || mime.lookup(this.resourcePath);
-	if(limit &#x3c;= 0 || content.length &#x3c; limit) {
-		return &#x22;module.exports = &#x22; + JSON.stringify(&#x22;data:&#x22; + (mimetype ? mimetype + &#x22;;&#x22; : &#x22;&#x22;) + &#
-x22;base64,&#x22; + content.<span class="apidocCodeKeywordSpan">toString</span>(&#x22;base64&#x22;));
+	if(limit &lt;= 0 || content.length &lt; limit) {
+		return "module.exports = " + JSON.stringify("data:" + (mimetype ? mimetype + ";" : "") + &amp;#
+x22;base64," + content.<span class="apidocCodeKeywordSpan">toString</span>("base64"));
 	} else {
-		var fileLoader = require(&#x22;file-loader&#x22;);
+		var fileLoader = require("file-loader");
 		return fileLoader.call(this, content);
 	}
 }
@@ -207,3 +200,4 @@ module.exports.raw = true;
     ]
 </div>
 </div>
+</body></html>
