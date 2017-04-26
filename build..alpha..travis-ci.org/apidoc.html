@@ -76,28 +76,6 @@
 
         </li>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.url-loader.toString">
-            function <span class="apidocSignatureSpan">url-loader.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.url-loader.toString">module url-loader.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.url-loader.toString.toString">
-            function <span class="apidocSignatureSpan">url-loader.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
@@ -131,71 +109,6 @@
 	}
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.url-loader.toString" id="apidoc.element.url-loader.toString">
-        function <span class="apidocSignatureSpan">url-loader.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-	var query = loaderUtils.getOptions(this) || {};
-	var limit = (this.options &#x26;&#x26; this.options.url &#x26;&#x26; this.options.url.dataUrlLimit) || 0;
-	if(query.limit) {
-		limit = parseInt(query.limit, 10);
-	}
-	var mimetype = query.mimetype || query.minetype || mime.lookup(this.resourcePath);
-	if(limit &#x3c;= 0 || content.length &#x3c; limit) {
-		return &#x22;module.exports = &#x22; + JSON.stringify(&#x22;data:&#x22; + (mimetype ? mimetype + &#x22;;&#x22; : &#x22;&#x22;) + &#
-x22;base64,&#x22; + content.<span class="apidocCodeKeywordSpan">toString</span>(&#x22;base64&#x22;));
-	} else {
-		var fileLoader = require(&#x22;file-loader&#x22;);
-		return fileLoader.call(this, content);
-	}
-}
-module.exports.raw = true;
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.url-loader.toString" id="apidoc.module.url-loader.toString">module url-loader.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.url-loader.toString.toString" id="apidoc.element.url-loader.toString.toString">
-        function <span class="apidocSignatureSpan">url-loader.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-	var query = loaderUtils.getOptions(this) || {};
-	var limit = (this.options &#x26;&#x26; this.options.url &#x26;&#x26; this.options.url.dataUrlLimit) || 0;
-	if(query.limit) {
-		limit = parseInt(query.limit, 10);
-	}
-	var mimetype = query.mimetype || query.minetype || mime.lookup(this.resourcePath);
-	if(limit &#x3c;= 0 || content.length &#x3c; limit) {
-		return &#x22;module.exports = &#x22; + JSON.stringify(&#x22;data:&#x22; + (mimetype ? mimetype + &#x22;;&#x22; : &#x22;&#x22;) + &#
-x22;base64,&#x22; + content.<span class="apidocCodeKeywordSpan">toString</span>(&#x22;base64&#x22;));
-	} else {
-		var fileLoader = require(&#x22;file-loader&#x22;);
-		return fileLoader.call(this, content);
-	}
-}
-module.exports.raw = true;
-...</pre></li>
     </ul>
 
 
