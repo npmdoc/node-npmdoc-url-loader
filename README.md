@@ -1,4 +1,7 @@
-# api documentation for  [url-loader (v0.5.8)](https://github.com/webpack/url-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-url-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-url-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-url-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-url-loader)
+# npmdoc-url-loader
+
+#### basic api documentation for  [url-loader (v0.5.8)](https://github.com/webpack/url-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-url-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-url-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-url-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-url-loader)
+
 #### url loader module for webpack
 
 [![NPM](https://nodei.co/npm/url-loader.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/url-loader)
@@ -68,7 +71,8 @@
         "url": "git+ssh://git@github.com/webpack/url-loader.git"
     },
     "scripts": {},
-    "version": "0.5.8"
+    "version": "0.5.8",
+    "bin": {}
 }
 ```
 
